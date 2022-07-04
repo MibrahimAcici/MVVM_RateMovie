@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.MovieDetailFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:id="@+id/movie_detail_poster"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/ic_launcher_background"
+                />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/movie_detail_title"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Title"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/acme">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/movie_detail_category"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Category"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="@font/acme">
+        </TextView>
+
+        <TextView
+            android:id="@+id/movie_detail_average"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Average"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="@font/acme">
+        </TextView>
+
+        <TextView
+            android:id="@+id/movie_detail_date"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Date"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="@font/acme">
+        </TextView>
+
+        <TextView
+            android:id="@+id/movie_detail_description"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Description"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/acme">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <ImageButton
+                android:id="@+id/movie_detail_btn_seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_7"
+                android:background="@color/red_7">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/movie_detail_btn_eight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_8"
+                android:layout_weight="1"
+                android:background="@color/red_8">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/movie_detail_btn_nine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_9"
+                android:layout_weight="1"
+                android:background="@color/red_9">
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/movie_detail_btn_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_10"
+                android:layout_weight="1"
+                android:background="@color/red_10">
+            </ImageButton>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

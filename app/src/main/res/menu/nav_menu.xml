@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeFragment"
+        android:title="ALL"
+        android:icon="@drawable/ic_home" />
+    <item android:id="@+id/sevenFragment"
+        android:title=""
+        android:icon="@drawable/ic_7" />
+    <item android:id="@+id/eightFragment"
+        android:title=""
+        android:icon="@drawable/ic_8" />
+    <item android:id="@+id/nineFragment"
+        android:title=""
+        android:icon="@drawable/ic_9" />
+    <item android:id="@+id/tenFragment"
+        android:title=""
+        android:icon="@drawable/ic_10" />
+</menu>
