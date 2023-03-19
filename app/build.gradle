@@ -12,7 +12,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.ibrahim.ratemovie"
+        applicationId "com.ibrahim.mvvm_ratemovie"
         minSdk 23
         targetSdk 32
         versionCode 1
@@ -61,12 +61,12 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
 
     // ViewModel
-    implementation"androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-rc02"
+    implementation"androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha01"
     // ViewModel utilities for Compose
-    implementation"androidx.lifecycle:lifecycle-viewmodel-compose:2.5.0-rc02"
+    implementation"androidx.lifecycle:lifecycle-viewmodel-compose:2.6.0-alpha01"
     // LiveData
-    implementation"androidx.lifecycle:lifecycle-livedata-ktx:2.5.0-rc02"
-
+    implementation"androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha01"
+    //Room
     implementation "androidx.room:room-runtime:2.4.2"
     kapt "androidx.room:room-compiler:2.4.2"
 
