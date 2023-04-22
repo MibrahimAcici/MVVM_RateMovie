@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.ibrahim.mvvm_ratemovie.fragment.HomeFragment"
+        android:name="com.ibrahim.mvvm_ratemovie.presentation.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -17,32 +17,37 @@
     </fragment>
     <fragment
         android:id="@+id/sevenFragment"
-        android:name="com.ibrahim.mvvm_ratemovie.fragment.SevenFragment"
+        android:name="com.ibrahim.mvvm_ratemovie.presentation.seven.SevenFragment"
         android:label="fragment_seven"
         tools:layout="@layout/fragment_seven" />
     <fragment
         android:id="@+id/eightFragment"
-        android:name="com.ibrahim.mvvm_ratemovie.fragment.EightFragment"
+        android:name="com.ibrahim.mvvm_ratemovie.presentation.eight.EightFragment"
         android:label="fragment_eight"
         tools:layout="@layout/fragment_eight" />
     <fragment
         android:id="@+id/nineFragment"
-        android:name="com.ibrahim.mvvm_ratemovie.fragment.NineFragment"
+        android:name="com.ibrahim.mvvm_ratemovie.presentation.nine.NineFragment"
         android:label="fragment_nine"
         tools:layout="@layout/fragment_nine" />
     <fragment
         android:id="@+id/tenFragment"
-        android:name="com.ibrahim.mvvm_ratemovie.fragment.TenFragment"
+        android:name="com.ibrahim.mvvm_ratemovie.presentation.ten.TenFragment"
         android:label="fragment_ten"
         tools:layout="@layout/fragment_ten" />
     <fragment
         android:id="@+id/movieDetailFragment"
-        android:name="com.ibrahim.mvvm_ratemovie.fragment.MovieDetailFragment"
+        android:name="com.ibrahim.mvvm_ratemovie.presentation.detail.MovieDetailFragment"
         android:label="fragment_movie_detail"
         tools:layout="@layout/fragment_movie_detail" >
         <argument
             android:name="movie"
             app:nullable="true"
-            app:argType="com.ibrahim.mvvm_ratemovie.model.Movie" />
+            app:argType="com.ibrahim.mvvm_ratemovie.domain.model.Movie" />
+        <action
+            android:id="@+id/action_movieDetailFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/movieDetailFragment"
+            app:popUpToInclusive="true"/>
     </fragment>
 </navigation>

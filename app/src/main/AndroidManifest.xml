@@ -7,6 +7,7 @@
     </uses-permission>
 
     <application
+        android:name="com.ibrahim.mvvm_ratemovie.di.HiltApplication"
         android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

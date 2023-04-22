@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fragment.MovieDetailFragment"
+    tools:context=".presentation.detail.MovieDetailFragment"
     android:background="@color/white">
 
     <LinearLayout
@@ -88,6 +88,18 @@
             android:layout_height="wrap_content"
             android:text="Movie Description"
             android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:fontFamily="@font/acme">
+        </TextView>
+
+        <TextView
+            android:id="@+id/movie_detail_vote"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VOTE"
+            android:textColor="@color/red_10"
             android:gravity="center"
             android:textSize="25sp"
             android:fontFamily="@font/acme">
